@@ -26,7 +26,7 @@ app.use(express.static("public"));
 
 
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutseed", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutplan", { useNewUrlParser: true });
 
 db.Workout.create({ name: "Workout Plan" })
   .then(dbWorkout => {
