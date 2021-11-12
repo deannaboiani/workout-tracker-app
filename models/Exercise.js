@@ -3,9 +3,8 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const ExerciseSchema = new Schema({
-    type: {
-        type: String,
-        trim: true
+    cardio: {
+        type:Boolean
     },
     name: {
         type: String,
